@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_horizontal_margin"
+    android:orientation="horizontal"
+    tools:context="cs185.cs.ucsb.edu.jingyan.MainActivity">
+
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="0dp"
+        android:layout_weight="0.9"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        android:minDate="@string/min_date"
+        android:maxDate="@string/max_date"
+        />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.1">
+
+        <fragment
+            android:id="@+id/fragment1"
+            android:name="cs185.cs.ucsb.edu.jingyan.TeamScore"
+            tools:layout="@layout/fragment_team_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="60dp"
+
+            />
+
+        <fragment
+            android:id="@+id/fragment2"
+            android:name="cs185.cs.ucsb.edu.jingyan.TeamScore"
+            tools:layout="@layout/fragment_team_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fragment1"
+            />
+
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_text"
+            android:onClick="clearInput"
+            android:layout_below="@+id/fragment2"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

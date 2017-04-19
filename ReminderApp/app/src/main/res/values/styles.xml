@@ -1,0 +1,50 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+        <!-- Default theme -->
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- Custom theme -->
+    <!--color-->
+    <style name="customTheme" parent="Theme.AppCompat.Light.NoActionBar" >
+        <item name="colorPrimaryDark">@color/darkGray</item>
+        <item name="colorAccent">@color/pink</item>
+        <item name="colorPrimary">@color/mediumGray</item>
+        <item name="android:colorBackground">@color/lightGray</item>
+        <item name="android:colorForeground">@color/colorAccent</item>
+
+    </style>
+
+    <!--Bold text style-->
+    <style name="BoldText" parent="@android:style/TextAppearance.DeviceDefault.Medium">
+        <item name="android:textSize">36sp</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textStyle">bold</item>
+        <!--<item name="android:typeface">Verdana</item>-->
+    </style>
+
+    <!--Medium text style-->
+    <style name="MediumText" parent="@android:style/TextAppearance.DeviceDefault.Medium">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/darkGray</item>
+        <item name="android:textStyle">bold</item>
+        <!--<item name="android:typeface">Verdana</item>-->
+    </style>
+
+    <!-- Custom theme -->
+
+
+</resources>

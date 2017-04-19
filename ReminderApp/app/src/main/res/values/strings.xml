@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">JingYanReminder</string>
+    <string name="title_reminder_detail">Reminder Detail</string>
+
+    <string name="title">T i t l e</string>
+    <string name="detail">D e t a i l s </string>
+    <string name="buttonAdd">A D D </string>
+    <string name="buttonEdit">E D I T </string>
+    <string name="buttonDelete">D E L E T E </string>
+
+    <string name="mon">M</string>
+    <string name="tue">T</string>
+    <string name="wed">W</string>
+    <string name="thru">T</string>
+    <string name="fri">F</string>
+    <string name="sat">S</string>
+    <string name="sun">S</string>
+
+</resources>

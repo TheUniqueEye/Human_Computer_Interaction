@@ -1,0 +1,116 @@
+
+
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/text_margin"
+        android:layout_marginLeft="@dimen/text_margin"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbarAlwaysDrawHorizontalTrack="true">
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="70dp">
+
+        <CheckBox
+            android:id="@+id/checkbox_Mon"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/mon" />
+
+        <CheckBox
+            android:id="@+id/checkbox_Tue"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/tue" />
+
+        <CheckBox
+            android:id="@+id/checkbox_Wed"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/wed" />
+
+        <CheckBox
+            android:id="@+id/checkbox_Tru"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/thru" />
+
+        <CheckBox
+            android:id="@+id/checkbox_Fri"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/fri" />
+
+        <CheckBox
+            android:id="@+id/checkbox_Sat"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/sat" />
+
+        <CheckBox
+            android:id="@+id/checkbox_Sun"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/sun" />
+
+    </LinearLayout>
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"
+        android:timePickerMode="spinner"
+        android:numbersBackgroundColor="@android:color/background_light"
+         />
+
+    <EditText
+            android:id="@+id/editText_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/detail"
+            android:layout_marginTop="26dp"
+            android:layout_below="@+id/timePicker"
+            android:layout_alignLeft="@+id/timePicker"
+            android:layout_alignStart="@+id/timePicker"
+            />
+
+    <EditText
+            android:id="@+id/editText_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/title"
+            android:maxLines="1"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/button_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonAdd"
+        android:layout_below="@id/editText_detail"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+
